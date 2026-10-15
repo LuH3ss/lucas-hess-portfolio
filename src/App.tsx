@@ -543,7 +543,7 @@ export default function App() {
       </section>
 
       <section id="perfil" className="py-16 md:py-24 px-5 md:px-12 lg:px-20 border-t border-fg/10">
-        <div className="max-w-6xl">
+        <div>
           <div className="grid gap-8 md:grid-cols-[0.8fr_1.4fr] md:gap-16 lg:gap-24">
             <div>
               <span className="text-[10px] uppercase tracking-[0.22em] text-fg/40">
@@ -554,14 +554,14 @@ export default function App() {
               </h2>
             </div>
 
-            <p className="max-w-2xl text-base md:text-xl font-light text-fg/70 leading-relaxed">
+            <p className="max-w-3xl text-base md:text-xl font-light text-fg/70 leading-relaxed">
               Vocalista interdisciplinario con formación profesional en canto y base técnica en
               producción musical. Su práctica integra interpretación, trabajo escénico y el
               desarrollo de una identidad visual propia.
             </p>
           </div>
 
-          <div className="mt-12 md:mt-16 grid sm:grid-cols-2 border-t border-l border-fg/10">
+          <div className="mt-12 md:mt-16 grid sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-fg/10">
             {[
               {
                 label: 'Formación vocal',
@@ -602,7 +602,7 @@ export default function App() {
               </p>
             </div>
             <div>
-              <p className="max-w-2xl font-light leading-relaxed text-fg/70">{SHORT_BIO}</p>
+              <p className="max-w-3xl font-light leading-relaxed text-fg/70">{SHORT_BIO}</p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <button
                   type="button"
@@ -627,20 +627,23 @@ export default function App() {
       </section>
 
       <section id="escuchar" className="py-16 md:py-24 px-5 md:px-12 lg:px-20 border-t border-fg/10">
-        <div className="max-w-6xl">
+        <div>
           <span className="text-[10px] uppercase tracking-[0.22em] text-fg/40">02 / Escuchar</span>
           <h2 className="mt-4 font-serif text-4xl md:text-6xl leading-none">Escuchar</h2>
 
-          <div className="mt-12 md:mt-16 max-w-4xl">
-            <div className="min-w-0">
-              <div className="mb-5 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-                <h3 className="font-serif text-2xl md:text-3xl">Deser0</h3>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-fg/40">EP · Diciembre 2025 · Tierso</span>
-              </div>
+          {/* Mobile: cabecera, reproductor, lista. Escritorio: cabecera + lista a la izquierda, reproductor a la derecha. */}
+          <div className="mt-12 md:mt-16 grid gap-6 lg:grid-cols-[0.8fr_1.4fr] lg:grid-rows-[auto_1fr] lg:gap-x-16 lg:gap-y-0 xl:gap-x-24">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 lg:col-start-1 lg:row-start-1 lg:flex-col lg:items-start lg:gap-y-2">
+              <h3 className="font-serif text-2xl md:text-3xl">Deser0</h3>
+              <span className="text-[10px] uppercase tracking-[0.2em] text-fg/40">EP · Diciembre 2025 · Tierso</span>
+            </div>
 
+            <div className="min-w-0 lg:col-start-2 lg:row-start-1 lg:row-span-2">
               <LiteYouTube key={track.id} id={track.id} title={track.title} initialActive={trackChosen} />
+            </div>
 
-              <ul className="mt-6 border-t border-fg/10">
+            <div className="min-w-0 lg:col-start-1 lg:row-start-2 lg:mt-5">
+              <ul className="border-t border-fg/10">
                 {EP_TRACKS.map((item, index) => {
                   const current = item.id === track.id;
                   return (
@@ -722,11 +725,11 @@ export default function App() {
       </section>
 
       <section id="conectar" className="py-16 md:py-28 px-5 md:px-12 lg:px-20 border-t border-fg/10">
-        <div className="max-w-6xl">
+        <div>
           <span className="text-[10px] uppercase tracking-[0.22em] text-fg/40">04 / Conectar</span>
           <h2 className="mt-4 font-serif text-4xl md:text-6xl leading-none">Conectar</h2>
 
-          <div className="mt-12 md:mt-16 grid gap-10 md:grid-cols-[1.4fr_1fr] md:gap-16">
+          <div className="mt-12 md:mt-16 grid gap-10 md:grid-cols-[1.4fr_1fr] md:gap-16 xl:gap-24">
             <div className="min-w-0">
               <span className="text-[10px] uppercase tracking-[0.2em] text-fg/40">Booking · Prensa · Colaboraciones</span>
               <a
