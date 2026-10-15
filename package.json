@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "format": "oxfmt",
     "build:pages": "vite build --base=/lucas-hess-portfolio/",
-    "deploy": "pnpm build:pages && gh-pages -d dist -m \"Deploy a GitHub Pages\""
+    "pages": "pnpm build:pages && gh-pages -d dist -m \"Deploy a GitHub Pages\""
   },
   "dependencies": {
     "framer-motion": "^13.4.4",
