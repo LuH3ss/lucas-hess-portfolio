@@ -1,0 +1,9 @@
+# Normaliza finales de línea. Los medios (~25 MB) van en git normal:
+# GitHub Pages no sirve archivos de Git LFS.
+* text=auto eol=lf
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.mp4 binary
+*.zip binary

@@ -1,0 +1,18 @@
+{
+  "title": "Lucas Hess — Vocalista interdisciplinario",
+  "description": "Lucas Hess, vocalista interdisciplinario radicado en Buenos Aires. Formación en la EMC, base en producción musical y alter ego Tierso (EP Deser0, 2025). Portfolio, música y contacto.",
+  "language": "es",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": "favicon.svg"
+  },
+  "openGraph": {
+    "image": "https://luh3ss.github.io/lucas-hess-portfolio/og.jpg"
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
