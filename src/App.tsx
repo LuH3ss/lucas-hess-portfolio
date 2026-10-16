@@ -28,7 +28,7 @@ const YOUTUBE_URL = 'https://youtube.com/@tierso-rayo';
 const INSTAGRAM_URL = 'https://www.instagram.com/tiers0';
 
 const SHORT_BIO =
-  'Lucas Hess es un vocalista interdisciplinario radicado en Buenos Aires, formado en la Escuela de Música Contemporánea (EMC) y con base técnica en producción musical. Su trabajo integra interpretación, escena e identidad visual. Bajo el alter ego Tierso lanzó en diciembre de 2025 su primer EP, Deser0: música experimental con arreglos corales, percusiones sintéticas y espacialidad.';
+  'Lucas Hess es vocalista interdisciplinario radicado en Buenos Aires. Formado en la Escuela de Música Contemporánea (EMC), con base técnica en producción musical. Integra interpretación, escena e identidad visual. Como Tierso publicó en diciembre de 2025 su primer EP, Deser0.';
 
 const EP_TRACKS = [
   { id: 'xeVIhXe_nbc', title: 'Deser0 — EP completo', kind: 'Full visualizer' },
@@ -71,7 +71,7 @@ const GALLERY_CATEGORIES = [
     id: 'sin-capas',
     title: 'Sin capas',
     subtitle: 'El punto de partida',
-    description: 'Retratos sin maquillaje, vestuario ni intervención. Un registro fiel del presente que funciona como base de trabajo: el material desde el cual se proyecta cada propuesta.',
+    description: 'Retratos sin maquillaje, vestuario ni intervención. El registro del que parto: de acá se proyecta el resto.',
     color: { dark: '#151515', light: '#efede9' },
     images: [
       '/gallery/esencia/01.jpg',
@@ -91,7 +91,7 @@ const GALLERY_CATEGORIES = [
     id: 'tierso',
     title: 'Tierso',
     subtitle: 'Alter ego artístico',
-    description: 'Alter ego experimental surgido durante la composición de Deser0, primer EP lanzado en diciembre de 2025. Música experimental construida a partir de arreglos corales, percusiones sintéticas y un trabajo deliberado sobre la espacialidad del sonido.',
+    description: 'Surgió mientras componía Deser0. Acá el foco está en el personaje: cuerpo, vestuario y una paleta más cruda.',
     color: { dark: '#0a1210', light: '#e9f0ec' },
     images: [
       '/gallery/yoruba/01.jpg',
@@ -105,7 +105,7 @@ const GALLERY_CATEGORIES = [
     id: 'glamour',
     title: 'Algo de glamour',
     subtitle: 'Estéticas bohemias',
-    description: 'Búsqueda de una estética bohemia construida desde el detalle. El proceso implicó un scouting de vestuario y de locaciones capaces de realzar cada prenda, acompañado de un maquillaje sobrio que deja el protagonismo a la textura y la luz.',
+    description: 'Scouting de vestuario y locaciones para que cada prenda respire. Maquillaje sobrio: el peso queda en la textura y la luz.',
     color: { dark: '#1a0d16', light: '#f2e9ee' },
     images: [
       '/gallery/jazz/01.jpg',
@@ -120,7 +120,7 @@ const GALLERY_CATEGORIES = [
     id: 'material',
     title: 'Material',
     subtitle: 'Colaboración académica · FADU',
-    description: 'Resultado de una colaboración con estudiantes de FADU, que lo convocaron para un trabajo académico cuyo eje fue Latinoamérica atravesada por el capitalismo contemporáneo. La imagen se construye desde lo áspero, lo precario y lo material.',
+    description: 'Me convocaron para un trabajo sobre Latinoamérica atravesada por el capitalismo contemporáneo. La imagen se arma desde lo áspero, lo precario, lo material.',
     color: { dark: '#1f140e', light: '#f3ebe3' },
     images: [
       '/gallery/folklore/01.gif',
@@ -555,9 +555,8 @@ export default function App() {
             </div>
 
             <p className="max-w-3xl text-base md:text-xl font-light text-fg/70 leading-relaxed">
-              Vocalista interdisciplinario con formación profesional en canto y base técnica en
-              producción musical. Su práctica integra interpretación, trabajo escénico y el
-              desarrollo de una identidad visual propia.
+              Vengo del canto y de la producción. El trabajo se fue abriendo a la escena y a la
+              imagen: no como un extra, sino como parte de cómo construyo cada pieza.
             </p>
           </div>
 
@@ -673,7 +672,7 @@ export default function App() {
 
               <div className="mt-5 flex flex-wrap items-start justify-between gap-x-8 gap-y-4">
                 <p className="max-w-xl text-sm font-light leading-relaxed text-fg/60">
-                  Música experimental con arreglos corales, percusiones sintéticas y espacialidad. Primer EP del proyecto Tierso.
+                  Arreglos corales, percusiones sintéticas y un trabajo deliberado sobre la espacialidad.
                 </p>
                 <a
                   href={YOUTUBE_URL}
@@ -694,8 +693,8 @@ export default function App() {
         <div className="px-5 md:px-12 lg:px-20 mb-14 md:mb-20">
           <span className="block mb-4 text-[10px] uppercase tracking-[0.22em] text-fg/40">03 / Portafolio</span>
           <h2 className="font-serif text-4xl md:text-6xl mb-5">Composiciones Visuales</h2>
-          <p className="text-fg/60 max-w-xl font-light">Todo comenzó como un juego: creaciones a partir de consignas que, con el tiempo, derivaron en una exploración sostenida de texturas, maquillaje, expresiones y locaciones. Cuatro series que recorren ese proceso.</p>
-          <p className="mt-4 text-fg/60 max-w-xl font-light">Todos los proyectos fueron concebidos y realizados bajo su dirección y autoría, en colaboración con fotógrafos, estilistas y otros artistas que acompañaron cada etapa.</p>
+          <p className="text-fg/60 max-w-xl font-light">Todo empezó como un juego: consignas, texturas, maquillaje, locaciones. Después se volvió una práctica. Cuatro series recorren ese proceso.</p>
+          <p className="mt-4 text-fg/60 max-w-xl font-light">Concebí y dirigí cada proyecto, con fotógrafos, estilistas y artistas que se sumaron en el camino.</p>
         </div>
 
         <div className="flex flex-col">
@@ -743,7 +742,7 @@ export default function App() {
                 />
               </a>
               <p className="mt-5 max-w-md font-light leading-relaxed text-fg/60">
-                Consultas por presentaciones en vivo, grabaciones, actuaciones y proyectos interdisciplinarios.
+                Fechas, estudio, escena o colaboraciones. Si hay un proyecto en mente, escribime.
               </p>
             </div>
 
