@@ -103,7 +103,7 @@ const GALLERY_CATEGORIES = [
   },
   {
     id: 'glamour',
-    title: 'Algo de glamour',
+    title: 'Patrón',
     subtitle: 'Estéticas bohemias',
     description: 'Scouting de vestuario y locaciones para que cada prenda respire. Maquillaje sobrio: el peso queda en la textura y la luz.',
     color: { dark: '#1a0d16', light: '#f2e9ee' },
